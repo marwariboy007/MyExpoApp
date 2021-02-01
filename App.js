@@ -5,12 +5,14 @@ import { StyleSheet,  View } from 'react-native';
 
 import Caritem from './component/caritem';
 import CarList from './component/carList';
+import HeaderComponent from './component/header';
 
 export default class App extends React.Component  { 
    render(){
   return (
 
-    <View style={styles.container}>      
+    <View style={styles.container}>   
+    <HeaderComponent></HeaderComponent>   
      <CarList></CarList>       
     </View>
     
